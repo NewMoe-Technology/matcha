@@ -33,11 +33,6 @@ namespace Cafe.Matcha.Views
             InitializeComponent();
             Init();
             lbCurrentVer.Content = Data.Version;
-            lbLatestVer.Content = "从未检查";
-            if (Config.Instance.Logger.CheckUpdate)
-            {
-                GetVersion();
-            }
         }
 
         private bool isInitialCheck = true;
@@ -552,11 +547,6 @@ namespace Cafe.Matcha.Views
             ViewModel.LogPause = !ViewModel.LogPause;
         }
 
-        private void BtnCheckUpd_Click(object sender, RoutedEventArgs e)
-        {
-            isInitialCheck = false;
-            GetVersion();
-        }
 
         private void BtnOpenUpd_Click(object sender, RoutedEventArgs e)
         {
@@ -564,68 +554,5 @@ namespace Cafe.Matcha.Views
             e.Handled = true;
         }
 
-        private async void GetVersion()
-        {
-            string apiPath = "https://api.github.com/repos/lsl1225/matcha/releases/latest";
-            string errMsg = "检查更新失败，请稍后再试！";
-            string foundNewVersion = "发现新版本，请在抹茶关于页更新！";
-            string isLatestVersion = "当前已是最新版本！";
-
-            lbCurrentVer.Content = Data.Version;
-            lbLatestVer.Content = "正在检查更新...";
-            btnCheckUpd.IsEnabled = false;
-
-            HttpClient httpClient = new HttpClient();
-            httpClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-            httpClient.DefaultRequestHeaders.UserAgent.TryParseAdd("request");
-            var response = await httpClient.GetAsync(apiPath);
-            if (response.IsSuccessStatusCode)
-            {
-                try
-                {
-                    var str = await response.Content.ReadAsStringAsync();
-                    JObject jsonObj = JObject.Parse(str.ToString());
-                    jsonObj.TryGetValue("tag_name", out JToken token);
-                    if (token != null)
-                    {
-                        string currentVer = Data.Version;
-                        string currentLatestVer = token.ToString();
-                        lbLatestVer.Content = currentLatestVer;
-
-                        if (currentVer != currentLatestVer)
-                        {
-                            Output.SendToast(foundNewVersion);
-                        }
-                        else
-                        {
-                            if (!isInitialCheck)
-                            {
-                                Output.SendToast(isLatestVersion);
-                            }
-                            else
-                            {
-                                isInitialCheck = false;
-                            }
-                        }
-                    }
-                    else
-                    {
-                        throw new Exception();
-                    }
-                }
-                catch (Exception)
-                {
-                    lbLatestVer.Content = errMsg;
-                    Output.SendToast(errMsg);
-                }
-            }
-            else
-            {
-                lbLatestVer.Content = errMsg;
-                Output.SendToast(errMsg);
-            }
-
-            btnCheckUpd.IsEnabled = true;
-        }
     }
 }
