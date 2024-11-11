@@ -159,9 +159,9 @@ namespace Cafe.Matcha.Network
             Universalis.Client.HandlePacket(opcode, packet);
 
             var data = packet.GetRawData();
-            if (opcode == MatchaOpcode.DirectorStart)
+            if (opcode == MatchaOpcode.ResumeEventScene32)
             {
-                if (packet.Length != PacketSize.DirectorStart)
+                if (packet.Length != PacketSize.ResumeEventScene32)
                 {
                     return false;
                 }
@@ -655,35 +655,24 @@ namespace Cafe.Matcha.Network
             }
             else if (opcode == MatchaOpcode.Examine)
             {
-                if (packet.Length != PacketSize.Examine)
+                if (packet.Length < PacketSize.Examine)
                 {
                     return false;
                 }
 
-                const int offset = 0x50;
-                const int length = 0x28;
-                for (int slot = 0; slot < 14; ++slot)
+                var examine = Examine.Read(packet.GetRawData());
+                for (int slot = 0; slot < examine.Gears.Count; ++slot)
                 {
-                    var detail = new List<int>();
-
-                    var materias = new List<Materia>();
-                    for (int i = 0; i < 5; ++i)
-                    {
-                        materias.Add(new Materia()
-                        {
-                            Type = BitConverter.ToUInt16(data, offset + slot * length + 18 + 4 * i),
-                            Tier = BitConverter.ToUInt16(data, offset + slot * length + 20 + 4 * i)
-                        });
-                    }
-
+                    var gear = examine.Gears[slot];
                     FireEvent(new GearsetDTO()
                     {
                         IsSelf = false,
                         Slot = slot,
-                        Item = (int)BitConverter.ToUInt32(data, offset + slot * length),
-                        HQ = data[offset + slot * length + 0x10] != 0,
-                        Glamour = (int)BitConverter.ToUInt32(data, offset + slot * length + 4),
-                        Materias = materias
+                        Item = (int)gear.ItemId,
+                        HQ = gear.HQ,
+                        Glamour = (int)gear.Glamour,
+                        Materias = gear.Materias,
+                        Name = examine.Name,
                     });
                 }
             }
@@ -703,7 +692,7 @@ namespace Cafe.Matcha.Network
             else if (opcode == MatchaOpcode.PlayerSpawn)
             {
                 var isCurrentPlayer = packet.Source == packet.Target;
-                var currentWorldId = BitConverter.ToUInt16(data, 20);
+                var currentWorldId = BitConverter.ToUInt16(data, 0x14);
 
                 State.Instance.HandleWorldId(currentWorldId, isCurrentPlayer);
             }

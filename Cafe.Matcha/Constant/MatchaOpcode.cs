@@ -13,7 +13,7 @@ namespace Cafe.Matcha.Constant
         CompanyAirshipStatus,
         CompanySubmersibleStatus,
         ContentFinderNotifyPop,
-        DirectorStart,
+        ResumeEventScene32,
         EventPlay,
         Examine,
         FateInfo,
@@ -45,7 +45,7 @@ namespace Cafe.Matcha.Constant
             /*
              * MiniCactpotInit
              */
-            { 0x0083, MatchaOpcode.DirectorStart },
+            { 0x0083, MatchaOpcode.ResumeEventScene32 },
             { 0x026d, MatchaOpcode.EventPlay },
             { 0x0326, MatchaOpcode.Examine },
             { 0x020a, MatchaOpcode.FateInfo },
@@ -68,7 +68,7 @@ namespace Cafe.Matcha.Constant
             { 0x018b, MatchaOpcode.CompanyAirshipStatus },
             { 0x0371, MatchaOpcode.CompanySubmersibleStatus },
             { 0x00bf, MatchaOpcode.ContentFinderNotifyPop },
-            { 0x0089, MatchaOpcode.DirectorStart },
+            { 0x0089, MatchaOpcode.ResumeEventScene32 },
             { 0x039a, MatchaOpcode.EventPlay },
             { 0x02dd, MatchaOpcode.Examine },
             { 0x00a3, MatchaOpcode.FateInfo },
@@ -76,12 +76,12 @@ namespace Cafe.Matcha.Constant
             { 0x0356, MatchaOpcode.InventoryTransaction },
             { 0x0110, MatchaOpcode.ItemInfo },
             { 0x0171, MatchaOpcode.MarketBoardItemListing },
-            { 0x0323, MatchaOpcode.MarketBoardItemListingCount },
+            { 0x03c6, MatchaOpcode.MarketBoardItemListingCount },
             { 0x0382, MatchaOpcode.MarketBoardItemListingHistory },
             { 0x8142, MatchaOpcode.MarketBoardRequestItemListingInfo },
             { 0x021a, MatchaOpcode.NpcSpawn },
             { 0x0212, MatchaOpcode.PlayerSetup },
-            { 0x03c5, MatchaOpcode.PlayerSpawn },
+            { 0x0134, MatchaOpcode.PlayerSpawn },
         };
     }
 }
