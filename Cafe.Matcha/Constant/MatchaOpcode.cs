@@ -15,6 +15,7 @@ namespace Cafe.Matcha.Constant
         ContentFinderNotifyPop,
         ResumeEventScene32,
         EventPlay,
+        EventStart,
         Examine,
         FateInfo,
         InitZone,
@@ -27,6 +28,7 @@ namespace Cafe.Matcha.Constant
         NpcSpawn,
         PlayerSetup,
         PlayerSpawn,
+        WorldVisitQueue,
     }
 
     internal static class OpcodeStorage
@@ -47,6 +49,7 @@ namespace Cafe.Matcha.Constant
              */
             { 0x35B, MatchaOpcode.ResumeEventScene32 },
             { 0x0159, MatchaOpcode.EventPlay },
+            { 0x00c1, MatchaOpcode.EventStart },
             { 0x1B3, MatchaOpcode.Examine },
             { 0x1C0, MatchaOpcode.FateInfo },
             { 0x2F0, MatchaOpcode.InitZone },
@@ -60,6 +63,7 @@ namespace Cafe.Matcha.Constant
             { 0x36A, MatchaOpcode.PlayerSetup },
             { 0x325, MatchaOpcode.PlayerSpawn },
         };
+
         public static Dictionary<ushort, MatchaOpcode> China = new Dictionary<ushort, MatchaOpcode>
         {
             { 0x02BF, MatchaOpcode.ActorControl },
@@ -68,17 +72,17 @@ namespace Cafe.Matcha.Constant
             { 0x0291, MatchaOpcode.CompanyAirshipStatus },
             { 0x01B4, MatchaOpcode.CompanySubmersibleStatus },
             { 0x01AD, MatchaOpcode.ContentFinderNotifyPop },
-            { 0x0159, MatchaOpcode.ResumeEventScene32 },
+            { 0x01FE, MatchaOpcode.ResumeEventScene32 },
             { 0x008A, MatchaOpcode.EventPlay },
             { 0x02BD, MatchaOpcode.Examine },
             { 0x02B4, MatchaOpcode.FateInfo },
             { 0x0108, MatchaOpcode.InitZone },
-            { 0x0073, MatchaOpcode.InventoryTransaction },
-            { 0x01d6, MatchaOpcode.ItemInfo },
+            { 0x0162, MatchaOpcode.InventoryTransaction },
+            { 0x03A9, MatchaOpcode.ItemInfo },
             { 0x0207, MatchaOpcode.MarketBoardItemListing },
             { 0x026E, MatchaOpcode.MarketBoardItemListingCount },
             { 0x010E, MatchaOpcode.MarketBoardItemListingHistory },
-            { 0x8380, MatchaOpcode.MarketBoardRequestItemListingInfo },
+            { 0x81BF, MatchaOpcode.MarketBoardRequestItemListingInfo },
             { 0x03BB, MatchaOpcode.NpcSpawn },
             { 0x0215, MatchaOpcode.PlayerSetup },
             { 0x0196, MatchaOpcode.PlayerSpawn },
