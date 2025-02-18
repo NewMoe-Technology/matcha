@@ -11116,7 +11116,7 @@
   },
   "986": {
     "name": {
-      "chs": "零式阿卡狄亚登天斗技场 轻量级1",
+      "chs": "阿卡狄亚零式登天斗技场 轻量级1",
       "en": "AAC Light-heavyweight M1 (Savage)",
       "ja": "至天の座アルカディア零式：ライトヘビー級1",
       "de": "Arkadion - Halbschwergewicht R1 (episch)",
@@ -11146,7 +11146,7 @@
   },
   "988": {
     "name": {
-      "chs": "零式阿卡狄亚登天斗技场 轻量级2",
+      "chs": "阿卡狄亚零式登天斗技场 轻量级2",
       "en": "AAC Light-heavyweight M2 (Savage)",
       "ja": "至天の座アルカディア零式：ライトヘビー級2",
       "de": "Arkadion - Halbschwergewicht R2 (episch)",
@@ -11176,7 +11176,7 @@
   },
   "990": {
     "name": {
-      "chs": "零式阿卡狄亚登天斗技场 轻量级3",
+      "chs": "阿卡狄亚零式登天斗技场 轻量级3",
       "en": "AAC Light-heavyweight M3 (Savage)",
       "ja": "至天の座アルカディア零式：ライトヘビー級3",
       "de": "Arkadion - Halbschwergewicht R3 (episch)",
@@ -11206,7 +11206,7 @@
   },
   "992": {
     "name": {
-      "chs": "零式阿卡狄亚登天斗技场 轻量级4",
+      "chs": "阿卡狄亚零式登天斗技场 轻量级4",
       "en": "AAC Light-heavyweight M4 (Savage)",
       "ja": "至天の座アルカディア零式：ライトヘビー級4",
       "de": "Arkadion - Halbschwergewicht R4 (episch)",
@@ -11221,7 +11221,7 @@
   },
   "993": {
     "name": {
-      "chs": "Cenote Ja Ja Gural",
+      "chs": "加加财富天坑",
       "en": "Cenote Ja Ja Gural",
       "ja": "宝物庫 セノーテ・ジャジャグラル",
       "de": "Cenote Ja Ja Gural",
@@ -11311,7 +11311,7 @@
   },
   "999": {
     "name": {
-      "chs": "打倒！沙尔托菲特盗贼团",
+      "chs": "打倒！沙尔托菲特盗贼团！",
       "en": "The Mightiest Shield",
       "ja": "打倒！ シャルトフィット盗賊団",
       "de": "Der mächtigste Schild",
@@ -11383,5 +11383,137 @@
     "item": 0,
     "itemSync": 680,
     "memberType": 1
+  },
+  "1006": {
+    "name": {
+      "chs": "光暗未来绝境战",
+      "en": "Futures Rewritten (Ultimate)"
+    },
+    "type": 28,
+    "level": 100,
+    "levelSync": 100,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "1007": {
+    "name": {
+      "chs": "白虎幻巧战",
+      "en": "The Jade Stoa (Unreal)"
+    },
+    "type": 4,
+    "level": 100,
+    "levelSync": 100,
+    "item": 690,
+    "itemSync": 695,
+    "memberType": 3
+  },
+  "1008": {
+    "name": {
+      "chs": "Yuweyawata Field Station",
+      "en": "Yuweyawata Field Station"
+    },
+    "type": 2,
+    "level": 100,
+    "levelSync": 100,
+    "item": 690,
+    "itemSync": 0,
+    "memberType": 2
+  },
+  "1009": {
+    "name": {
+      "chs": "The Warmth of Family",
+      "en": "The Warmth of Family"
+    },
+    "type": 7,
+    "level": 100,
+    "levelSync": 100,
+    "item": 0,
+    "itemSync": 730,
+    "memberType": 1
+  },
+  "1010": {
+    "name": {
+      "chs": "The Cloud of Darkness (Chaotic)",
+      "en": "The Cloud of Darkness (Chaotic)"
+    },
+    "type": 37,
+    "level": 100,
+    "levelSync": 100,
+    "item": 710,
+    "itemSync": 735,
+    "memberType": 33
+  },
+  "1012": {
+    "name": {
+      "chs": "React to Attack Markers",
+      "en": "React to Attack Markers"
+    },
+    "type": 20,
+    "level": 49,
+    "levelSync": 49,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 1
+  },
+  "1013": {
+    "name": {
+      "chs": "React to Floor Markers",
+      "en": "React to Floor Markers"
+    },
+    "type": 20,
+    "level": 49,
+    "levelSync": 49,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 1
+  },
+  "1014": {
+    "name": {
+      "chs": "React to Advanced Visual Indicators",
+      "en": "React to Advanced Visual Indicators"
+    },
+    "type": 20,
+    "level": 49,
+    "levelSync": 49,
+    "item": 0,
+    "itemSync": 0,
+    "memberType": 1
+  },
+  "1015": {
+    "name": {
+      "chs": "Jeuno: The First Walk",
+      "en": "Jeuno: The First Walk"
+    },
+    "type": 5,
+    "level": 100,
+    "levelSync": 100,
+    "item": 695,
+    "itemSync": 0,
+    "memberType": 4
+  },
+  "1016": {
+    "name": {
+      "chs": "Bar the Passage",
+      "en": "Bar the Passage"
+    },
+    "type": 7,
+    "level": 100,
+    "levelSync": 100,
+    "item": 0,
+    "itemSync": 730,
+    "memberType": 1
+  },
+  "1017": {
+    "name": {
+      "chs": "永恒女王歼殛战",
+      "en": "The Minstrel’s Ballad: Sphene's Burden"
+    },
+    "type": 4,
+    "level": 100,
+    "levelSync": 100,
+    "item": 710,
+    "itemSync": 0,
+    "memberType": 3
   }
 }

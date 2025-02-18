@@ -16,7 +16,6 @@ namespace Cafe.Matcha.Views
     using Cafe.Matcha.Constant;
     using Cafe.Matcha.DTO;
     using Cafe.Matcha.Network;
-    using Cafe.Matcha.Network.Universalis;
     using Cafe.Matcha.Utils;
     using Microsoft.Win32;
     using Newtonsoft.Json.Linq;
@@ -100,9 +99,6 @@ namespace Cafe.Matcha.Views
             network.OnException += LogException;
             network.OnReceiveEvent += Network_onReceiveEvent;
 
-#if DEBUG
-            Client.UniversalisProcessor.Log += OnUniversalisLog;
-#endif
 
             ParsePlugin.Init(ffxivPlugin, network);
 
@@ -119,13 +115,6 @@ namespace Cafe.Matcha.Views
             ParsePlugin.Instance.Network = network;
             ParsePlugin.Instance.Start();
         }
-
-#if DEBUG
-        private void OnUniversalisLog(object sender, string e)
-        {
-            Utils.Log.Info(LogType.Universalis, e);
-        }
-#endif
 
         private void FateNode_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
@@ -293,7 +282,8 @@ namespace Cafe.Matcha.Views
             }
 
             string typeString = Enum.GetName(typeof(LogType), type);
-            vm.Log = string.Format("[{0}][{1}][{2}] {3}\r\n", DateTime.Now, level, typeString, message) + vm.Log;
+            vm.Log = string.Format("[{0}][{1}][{2}] {3}\r\n", DateTime.Now, level, typeString, message) +
+                (vm.Log.Length > 10240 ? vm.Log.Substring(0, 10240) : vm.Log);
             ++vm.LogShowCount;
         }
 
