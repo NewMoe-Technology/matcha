@@ -85,7 +85,7 @@ namespace Cafe.Matcha.Constant
             { 0x81BF, MatchaOpcode.MarketBoardRequestItemListingInfo },
             { 0x03BB, MatchaOpcode.NpcSpawn },
             { 0x0215, MatchaOpcode.PlayerSetup },
-            { 0x0196, MatchaOpcode.PlayerSpawn },
+            { 0x01DD, MatchaOpcode.PlayerSpawn },
         };
     }
 }
