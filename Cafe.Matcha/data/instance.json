@@ -11386,7 +11386,7 @@
   },
   "1006": {
     "name": {
-      "chs": "",
+      "chs": "光暗未来绝境战",
       "en": "Futures Rewritten (Ultimate)",
       "ja": "絶もうひとつの未来",
       "de": "Eine zweite Zukunft (fatal)",
@@ -11443,6 +11443,18 @@
     "item": 0,
     "itemSync": 730,
     "memberType": 1
+  },
+  "1010": {
+    "name": {
+      "chs": "The Cloud of Darkness (Chaotic)",
+      "en": "The Cloud of Darkness (Chaotic)"
+    },
+    "type": 37,
+    "level": 100,
+    "levelSync": 100,
+    "item": 710,
+    "itemSync": 735,
+    "memberType": 33
   },
   "1012": {
     "name": {
@@ -11504,10 +11516,22 @@
     "itemSync": 0,
     "memberType": 4
   },
+  "1016": {
+    "name": {
+      "chs": "Bar the Passage",
+      "en": "Bar the Passage"
+    },
+    "type": 7,
+    "level": 100,
+    "levelSync": 100,
+    "item": 0,
+    "itemSync": 730,
+    "memberType": 1
+  },
   "1017": {
     "name": {
       "chs": "永恒女王忆想歼灭战",
-      "en": "The Minstrel’s Ballad: Sphene's Burden",
+      "en": "The Minstrel's Ballad: Sphene's Burden",
       "ja": "極エターナルクイーン討滅戦",
       "de": "Gok Tajaal - Ewige Königin",
       "fr": "Interphos (extrême)"
@@ -11516,6 +11540,150 @@
     "level": 100,
     "levelSync": 100,
     "item": 710,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "1019": {
+    "name": {
+      "chs": "AAC Cruiserweight M1",
+      "en": "AAC Cruiserweight M1"
+    },
+    "type": 5,
+    "level": 100,
+    "levelSync": 100,
+    "item": 715,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "1020": {
+    "name": {
+      "chs": "AAC Cruiserweight M1 (Savage)",
+      "en": "AAC Cruiserweight M1 (Savage)"
+    },
+    "type": 5,
+    "level": 100,
+    "levelSync": 100,
+    "item": 730,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "1021": {
+    "name": {
+      "chs": "AAC Cruiserweight M2",
+      "en": "AAC Cruiserweight M2"
+    },
+    "type": 5,
+    "level": 100,
+    "levelSync": 100,
+    "item": 715,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "1022": {
+    "name": {
+      "chs": "AAC Cruiserweight M2 (Savage)",
+      "en": "AAC Cruiserweight M2 (Savage)"
+    },
+    "type": 5,
+    "level": 100,
+    "levelSync": 100,
+    "item": 735,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "1023": {
+    "name": {
+      "chs": "AAC Cruiserweight M3",
+      "en": "AAC Cruiserweight M3"
+    },
+    "type": 5,
+    "level": 100,
+    "levelSync": 100,
+    "item": 715,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "1024": {
+    "name": {
+      "chs": "AAC Cruiserweight M3 (Savage)",
+      "en": "AAC Cruiserweight M3 (Savage)"
+    },
+    "type": 5,
+    "level": 100,
+    "levelSync": 100,
+    "item": 740,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "1025": {
+    "name": {
+      "chs": "AAC Cruiserweight M4",
+      "en": "AAC Cruiserweight M4"
+    },
+    "type": 5,
+    "level": 100,
+    "levelSync": 100,
+    "item": 715,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "1026": {
+    "name": {
+      "chs": "AAC Cruiserweight M4 (Savage)",
+      "en": "AAC Cruiserweight M4 (Savage)"
+    },
+    "type": 5,
+    "level": 100,
+    "levelSync": 100,
+    "item": 740,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "1027": {
+    "name": {
+      "chs": "the Underkeep",
+      "en": "the Underkeep"
+    },
+    "type": 2,
+    "level": 100,
+    "levelSync": 100,
+    "item": 705,
+    "itemSync": 0,
+    "memberType": 2
+  },
+  "1029": {
+    "name": {
+      "chs": "朱雀幻巧战",
+      "en": "Hells' Kier (Unreal)"
+    },
+    "type": 4,
+    "level": 100,
+    "levelSync": 100,
+    "item": 690,
+    "itemSync": 695,
+    "memberType": 3
+  },
+  "1030": {
+    "name": {
+      "chs": "Recollection",
+      "en": "Recollection"
+    },
+    "type": 4,
+    "level": 100,
+    "levelSync": 100,
+    "item": 715,
+    "itemSync": 0,
+    "memberType": 3
+  },
+  "1031": {
+    "name": {
+      "chs": "Recollection (Extreme)",
+      "en": "Recollection (Extreme)"
+    },
+    "type": 4,
+    "level": 100,
+    "levelSync": 100,
+    "item": 730,
     "itemSync": 0,
     "memberType": 3
   }

@@ -24,7 +24,9 @@ namespace Cafe.Matcha.Network
         private List<AbstractHandler> handlers = new List<AbstractHandler>();
         public NetworkMonitor()
         {
+            AddHandler<FishingHandler>();
             AddHandler<MarketBoardHandler>();
+            AddHandler<QueueHandler>();
         }
 
         public void HandleMessageReceived(string connection, long epoch, byte[] message)
@@ -365,6 +367,13 @@ namespace Cafe.Matcha.Network
                             break;
                         }
 
+                    case ActorControlType.FishingBaitChange:
+                        {
+                            var baitId = BitConverter.ToUInt32(data, 4);
+                            State.Instance.FishingBait = baitId;
+                            break;
+                        }
+
                     case ActorControlType.DirectorUpdate:
                         {
                             var category = BitConverter.ToUInt32(data, 4);
@@ -493,51 +502,6 @@ namespace Cafe.Matcha.Network
                     Zone = zoneId,
                     Instance = contentId
                 });
-            }
-            else if (opcode == MatchaOpcode.EventPlay)
-            {
-                if (packet.Length != PacketSize.EventPlay)
-                {
-                    return false;
-                }
-
-                var targetActorId = packet.Target;
-                var fishActorId = BitConverter.ToUInt32(data, 0);
-
-                if (targetActorId != fishActorId)
-                {
-                    return true;
-                }
-
-                var type = (FishEventType)BitConverter.ToUInt16(data, 12);
-                var biteType = BitConverter.ToUInt16(data, 28);
-
-                if (type != FishEventType.Bite)
-                {
-                    return true;
-                }
-
-                switch ((FishEventBiteType)biteType)
-                {
-                    case FishEventBiteType.Big:
-                        FireEvent(new FishBiteDTO()
-                        {
-                            Type = 3
-                        });
-                        break;
-                    case FishEventBiteType.Light:
-                        FireEvent(new FishBiteDTO()
-                        {
-                            Type = 1
-                        });
-                        break;
-                    case FishEventBiteType.Medium:
-                        FireEvent(new FishBiteDTO()
-                        {
-                            Type = 2
-                        });
-                        break;
-                }
             }
             else if (opcode == MatchaOpcode.ItemInfo)
             {

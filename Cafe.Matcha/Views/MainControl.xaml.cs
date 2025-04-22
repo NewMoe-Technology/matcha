@@ -99,7 +99,6 @@ namespace Cafe.Matcha.Views
             network.OnException += LogException;
             network.OnReceiveEvent += Network_onReceiveEvent;
 
-
             ParsePlugin.Init(ffxivPlugin, network);
 
             if (Config.Instance.Language == null)
