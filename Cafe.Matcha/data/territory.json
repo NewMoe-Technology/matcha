@@ -7132,6 +7132,13 @@
     "de": "Südliches Thanalan",
     "fr": "Thanalan méridional"
   },
+  "1237": {
+    "chs": "憧憬湾",
+    "en": "Sinus Ardorum",
+    "ja": "焦がれの入江",
+    "de": "Sinus Ardorum",
+    "fr": "Sinus Ardorum"
+  },
   "1238": {
     "chs": "另一个未来",
     "en": "A Future Rewritten",
@@ -7147,7 +7154,11 @@
     "fr": "Clairière de Jade"
   },
   "1241": {
-    "chs": "暗黑领域"
+    "chs": "暗黑领域",
+    "en": "Sphere of Naught",
+    "ja": "暗闇の領域",
+    "de": "Sphäre der Leere",
+    "fr": "Sphère de l'absence"
   },
   "1242": {
     "chs": "玉韦亚瓦塔",
@@ -7177,6 +7188,13 @@
     "de": "Halatali",
     "fr": "Halatali"
   },
+  "1246": {
+    "chs": "佐戈永结桥",
+    "en": "Zorgor the Boundless",
+    "ja": "ゾーゴー永結橋",
+    "de": "Zorgor die Weite",
+    "fr": "Traverse de Zorgor"
+  },
   "1247": {
     "chs": "星芒市场",
     "en": "Starlight Stalls",
@@ -7190,6 +7208,13 @@
     "ja": "ジュノ：ザ・ファーストウォーク",
     "de": "Jeuno: Die erste Etappe",
     "fr": "Jeuno - La première perambulation"
+  },
+  "1252": {
+    "chs": "South Horn",
+    "en": "South Horn",
+    "ja": "三日月島南部",
+    "de": "Südliches Kreszentia",
+    "fr": "Île de Lunule méridionale"
   },
   "1253": {
     "chs": "星芒市场",
@@ -7205,6 +7230,69 @@
     "de": "Yuweyawata",
     "fr": "Yuweyawata"
   },
+  "1255": {
+    "chs": "临时面试会场",
+    "en": "Hall of the Unbound",
+    "ja": "仮設オーディション会場",
+    "de": "Audienzsaal",
+    "fr": "Salle d'audition des Affranchis"
+  },
+  "1256": {
+    "chs": "劲舞格斗场",
+    "en": "Groovy Ring",
+    "ja": "リング・オブ・ダンス",
+    "de": "Tanzring",
+    "fr": "Ring des Chorégraphies endiablées"
+  },
+  "1257": {
+    "chs": "劲舞格斗场",
+    "en": "Groovy Ring",
+    "ja": "リング・オブ・ダンス",
+    "de": "Tanzring",
+    "fr": "Ring des Chorégraphies endiablées"
+  },
+  "1258": {
+    "chs": "艺术格斗场",
+    "en": "Rebel Ring",
+    "ja": "リング・オブ・アート",
+    "de": "Kunstring",
+    "fr": "Ring de l'Inspiration artistique"
+  },
+  "1259": {
+    "chs": "艺术格斗场",
+    "en": "Rebel Ring",
+    "ja": "リング・オブ・アート",
+    "de": "Kunstring",
+    "fr": "Ring de l'Inspiration artistique"
+  },
+  "1260": {
+    "chs": "第八层建设区域",
+    "en": "Demolition Site",
+    "ja": "第八層建設区域",
+    "de": "Neubaugebiet der achten Ebene",
+    "fr": "Site de construction du huitième étage"
+  },
+  "1261": {
+    "chs": "第八层建设区域",
+    "en": "Demolition Site",
+    "ja": "第八層建設区域",
+    "de": "Neubaugebiet der achten Ebene",
+    "fr": "Site de construction du huitième étage"
+  },
+  "1262": {
+    "chs": "独狼格斗场",
+    "en": "Hunter's Ring",
+    "ja": "リング・オブ・ウルフ",
+    "de": "Wolfsring",
+    "fr": "Ring du Champion lupin"
+  },
+  "1263": {
+    "chs": "独狼格斗场",
+    "en": "Hunter's Ring",
+    "ja": "リング・オブ・ウルフ",
+    "de": "Wolfsring",
+    "fr": "Ring du Champion lupin"
+  },
   "1264": {
     "chs": "朱诺下层",
     "en": "Lower Jeuno",
@@ -7218,5 +7306,96 @@
     "ja": "ジュノ下層",
     "de": "Unter-Jeuno",
     "fr": "Bas Jeuno"
+  },
+  "1266": {
+    "chs": "永护塔底",
+    "en": "The Underkeep",
+    "ja": "アンダーキープ",
+    "de": "Unterfried",
+    "fr": "Gardienne de l'Immémorial"
+  },
+  "1267": {
+    "chs": "喀恩埋没圣堂",
+    "en": "The Sunken Temple of Qarn",
+    "ja": "カルン埋没寺院",
+    "de": "Versunkener Tempel von Qarn",
+    "fr": "Temple enseveli de Qarn"
+  },
+  "1268": {
+    "chs": "休息室",
+    "en": "Break Room",
+    "ja": "仮眠室",
+    "de": "Ruheraum",
+    "fr": "Salle de repos"
+  },
+  "1269": {
+    "chs": "Phantom Village",
+    "en": "Phantom Village",
+    "ja": "蜃気楼の町",
+    "de": "Trugstadt",
+    "fr": "Ville fantôme"
+  },
+  "1270": {
+    "chs": "王座大殿",
+    "en": "Recollection",
+    "ja": "玉座の間",
+    "de": "Audienzhalle",
+    "fr": "Salle du trône séculaire"
+  },
+  "1271": {
+    "chs": "王座大殿",
+    "en": "Recollection",
+    "ja": "玉座の間",
+    "de": "Audienzhalle",
+    "fr": "Salle du trône séculaire"
+  },
+  "1272": {
+    "chs": "狱之底",
+    "en": "Hells' Kier",
+    "ja": "獄之底",
+    "de": "Höllengrund",
+    "fr": "Fond des enfers"
+  },
+  "1273": {
+    "chs": "加尔提诺平原周边遗迹群",
+    "en": "Carteneau Flats: Borderland Ruins",
+    "ja": "カルテノー平原：外縁遺跡群",
+    "de": "Äußere Ruinen",
+    "fr": "Ruines frontalières"
+  },
+  "1274": {
+    "chs": "王座大殿",
+    "en": "Throne Room",
+    "ja": "玉座の間",
+    "de": "Audienzhalle",
+    "fr": "Salle du trône séculaire"
+  },
+  "1275": {
+    "chs": "王座大殿",
+    "en": "Recollection",
+    "ja": "玉座の間",
+    "de": "Audienzhalle",
+    "fr": "Salle du trône séculaire"
+  },
+  "1276": {
+    "chs": "第八层建设区域",
+    "en": "Demolition Site",
+    "ja": "第八層建設区域",
+    "de": "Neubaugebiet der achten Ebene",
+    "fr": "Site de construction du huitième étage"
+  },
+  "1277": {
+    "chs": "Main Deck",
+    "en": "Main Deck",
+    "ja": "大洋の船上",
+    "de": "Auf hoher See",
+    "fr": "Pont du navire"
+  },
+  "1278": {
+    "chs": "Phantom Village",
+    "en": "Phantom Village",
+    "ja": "蜃気楼の町",
+    "de": "Trugstadt",
+    "fr": "Ville fantôme"
   }
 }
