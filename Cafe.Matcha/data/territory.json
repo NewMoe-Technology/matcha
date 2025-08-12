@@ -202,20 +202,6 @@
     "de": "Pharos Sirius",
     "fr": "Phare de Sirius"
   },
-  "162": {
-    "chs": "日影地修炼所",
-    "en": "Halatali",
-    "ja": "ハラタリ修練所",
-    "de": "Halatali",
-    "fr": "Halatali"
-  },
-  "163": {
-    "chs": "喀恩埋没圣堂",
-    "en": "The Sunken Temple of Qarn",
-    "ja": "カルン埋没寺院",
-    "de": "Versunkener Tempel von Qarn",
-    "fr": "Temple enseveli de Qarn"
-  },
   "167": {
     "chs": "无限城古堡",
     "en": "Amdapor Keep",
@@ -3079,13 +3065,6 @@
     "de": "Azim-Steppe",
     "fr": "Steppe d'Azim"
   },
-  "623": {
-    "chs": "巴儿达木霸道",
-    "en": "Bardam's Mettle",
-    "ja": "バルダム覇道",
-    "de": "Bardams Probe",
-    "fr": "Force de Bardam"
-  },
   "624": {
     "chs": "云冠群岛",
     "en": "The Diadem",
@@ -3099,13 +3078,6 @@
     "ja": "ディアデム諸島",
     "de": "Das Diadem",
     "fr": "Le Diadème"
-  },
-  "626": {
-    "chs": "妖歌海",
-    "en": "The Sirensong Sea",
-    "ja": "セイレーン海",
-    "de": "Sirenen-See",
-    "fr": "Mer du Chant des sirènes"
   },
   "627": {
     "chs": "影之国",
@@ -3281,20 +3253,6 @@
     "ja": "ラールガーズリーチ",
     "de": "Rhalgrs Wacht",
     "fr": "L'Étendue de Rhalgr"
-  },
-  "660": {
-    "chs": "多玛王城",
-    "en": "Doma Castle",
-    "ja": "ドマ城",
-    "de": "Burg Doma",
-    "fr": "Château de Doma"
-  },
-  "661": {
-    "chs": "帝国白山堡",
-    "en": "Castrum Abania",
-    "ja": "カストルム・アバニア",
-    "de": "Castrum Abania",
-    "fr": "Castrum Abania"
   },
   "662": {
     "chs": "黄金阁",
@@ -3484,13 +3442,6 @@
     "ja": "アジムステップ",
     "de": "Azim-Steppe",
     "fr": "Steppe d'Azim"
-  },
-  "689": {
-    "chs": "阿拉米格",
-    "en": "Ala Mhigo",
-    "ja": "アラミゴ",
-    "de": "Ala Mhigo",
-    "fr": "Ala Mhigo"
   },
   "690": {
     "chs": "时空狭缝",
@@ -3778,13 +3729,6 @@
     "ja": "結晶化空間",
     "de": "Raum der Transparenz",
     "fr": "Transparence"
-  },
-  "731": {
-    "chs": "斯卡拉遗迹",
-    "en": "The Drowned City of Skalla",
-    "ja": "スカラ",
-    "de": "Die versunkene Stadt Skalla",
-    "fr": "Cité engloutie de Skalla"
   },
   "732": {
     "chs": "优雷卡常风之地",
@@ -4150,13 +4094,6 @@
     "de": "Sankt Mocianne-Arboretum",
     "fr": "Arboretum Sainte-Mocianne"
   },
-  "789": {
-    "chs": "终末焦土",
-    "en": "The Burn",
-    "ja": "ザ・バーン",
-    "de": "Kargland",
-    "fr": "L'Escarre"
-  },
   "790": {
     "chs": "乌尔达哈现世回廊",
     "en": "Ul'dah - Steps of Nald",
@@ -4177,13 +4114,6 @@
     "ja": "ベラフディア遺跡風特設アスレチック",
     "de": "Belah'dias Fall",
     "fr": "Chutes de Belah'dia"
-  },
-  "793": {
-    "chs": "基姆利特暗区",
-    "en": "The Ghimlyt Dark",
-    "ja": "ギムリトダーク",
-    "de": "Ghimlyt-Finsternis",
-    "fr": "Les Ténèbres de Ghimlyt"
   },
   "794": {
     "chs": "乌兹奈藏宝运河神殿",
@@ -7146,13 +7076,6 @@
     "de": "Eine zweite Zukunft",
     "fr": "Avenirs réécrits"
   },
-  "1239": {
-    "chs": "白帝竹林",
-    "en": "The Jade Stoa",
-    "ja": "白帝の竹林",
-    "de": "Jadelichtung",
-    "fr": "Clairière de Jade"
-  },
   "1241": {
     "chs": "暗黑领域",
     "en": "Sphere of Naught",
@@ -7397,5 +7320,96 @@
     "ja": "蜃気楼の町",
     "de": "Trugstadt",
     "fr": "Ville fantôme"
+  },
+  "1279": {
+    "chs": "Vault Oneiron",
+    "en": "Vault Oneiron",
+    "ja": "ボルト・オネイロン",
+    "de": "Tresor Oneiron",
+    "fr": "Coffre d'Oneiron"
+  },
+  "1292": {
+    "chs": "The Meso Terminal",
+    "en": "The Meso Terminal",
+    "ja": "メインターミナル",
+    "de": "Meso-System",
+    "fr": "Mésoterminal"
+  },
+  "1293": {
+    "chs": "The Bayside Battleground",
+    "en": "The Bayside Battleground",
+    "ja": "ベイサイド・バトルグラウンド",
+    "de": "Der Küstenkampf",
+    "fr": "Le Rivage redoutable"
+  },
+  "1294": {
+    "chs": "The Bayside Battleground",
+    "en": "The Bayside Battleground",
+    "ja": "ベイサイド・バトルグラウンド",
+    "de": "Der Küstenkampf",
+    "fr": "Le Rivage redoutable"
+  },
+  "1295": {
+    "chs": "The Ageless Necropolis",
+    "en": "The Ageless Necropolis",
+    "ja": "死の満ちる地",
+    "de": "Fülle des Todes",
+    "fr": "Nécropole intemporelle"
+  },
+  "1296": {
+    "chs": "The Ageless Necropolis",
+    "en": "The Ageless Necropolis",
+    "ja": "死の満ちる地",
+    "de": "Fülle des Todes",
+    "fr": "Nécropole intemporelle"
+  },
+  "1299": {
+    "chs": "Containment Complex 10-29",
+    "en": "Containment Complex 10-29",
+    "ja": "格納殻10-29",
+    "de": "Lagerhülle 10-29",
+    "fr": "Division d'entreposage 10-29"
+  },
+  "1302": {
+    "chs": "蛇神大社",
+    "en": "The Wreath of Snakes",
+    "ja": "蛇神大社",
+    "de": "Heiligtum der Schlange",
+    "fr": "Sanctuaire du Grand Serpent"
+  },
+  "1303": {
+    "chs": "樵鸣洞",
+    "en": "Cutter's Cry",
+    "ja": "カッターズクライ",
+    "de": "Sägerschrei",
+    "fr": "Gouffre hurlant"
+  },
+  "1304": {
+    "chs": "San d'Oria: The Second Walk",
+    "en": "San d'Oria: The Second Walk",
+    "ja": "サンドリア：ザ・セカンドウォーク",
+    "de": "San d'Oria: Die zweite Etappe",
+    "fr": "San d'Oria - La deuxième perambulation"
+  },
+  "1305": {
+    "chs": "亡灵府邸闹鬼庄园",
+    "en": "Haunted Manor",
+    "ja": "亡霊屋敷 ホーンテッドマナー",
+    "de": "Geisterschloss",
+    "fr": "Manoir hanté"
+  },
+  "1309": {
+    "chs": "星芒市场",
+    "en": "Starlight Stalls",
+    "ja": "星芒マーケット",
+    "de": "Sternenlicht-Stände",
+    "fr": "Marché des étoiles"
+  },
+  "1312": {
+    "chs": "The Ageless Necropolis",
+    "en": "The Ageless Necropolis",
+    "ja": "死の満ちる地",
+    "de": "Fülle des Todes",
+    "fr": "Nécropole intemporelle"
   }
 }
