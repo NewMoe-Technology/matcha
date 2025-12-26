@@ -33,6 +33,11 @@ namespace Cafe.Matcha.Constant
 
     internal static class OpcodeStorage
     {
+        /*
+         * CompanyAirshipStatus -> AirshipTimers
+         * CompanySubmersibleStatus -> SubmarineTimers
+         * ResumeEventScene32 -> MiniCactpotInit
+         */
         public static Dictionary<ushort, MatchaOpcode> Global = new Dictionary<ushort, MatchaOpcode>
         {
             { 0x019B, MatchaOpcode.ActorControl },
