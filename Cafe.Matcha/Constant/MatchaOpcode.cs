@@ -94,5 +94,6 @@ namespace Cafe.Matcha.Constant
             { 0x00E5, MatchaOpcode.PlayerSetup },
             { 0x01A4, MatchaOpcode.PlayerSpawn },
             { 0x03DC, MatchaOpcode.WorldVisitQueue },
+        };
     }
 }
