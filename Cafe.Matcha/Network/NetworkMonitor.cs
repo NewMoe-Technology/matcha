@@ -91,17 +91,20 @@ namespace Cafe.Matcha.Network
 
         private bool HandleMessageByOpcode(Packet packet)
         {
-            if (!packet.Known)
-            {
-                return false;
-            }
-
             foreach (var handler in handlers)
             {
                 if (handler.Handle(packet))
                 {
+#if DEBUG
+                    Log.Debug(LogType.PacketHandler, $"type={packet.Opcode:X4}, size={packet.DataLength}, handled by {handler.GetType().Name}");
+#endif
                     return true;
                 }
+            }
+
+            if (!packet.Known)
+            {
+                return false;
             }
 
             // TODO: Move all parsing logic to Handler
