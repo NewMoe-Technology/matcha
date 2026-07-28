@@ -18,6 +18,7 @@ namespace Cafe.Matcha.Constant
         InvalidPacket,
         RawPacket,
         Debug1,
+        PacketHandler,
 #endif
     }
 }
