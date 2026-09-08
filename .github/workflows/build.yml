@@ -15,8 +15,6 @@ jobs:
     runs-on: windows-latest
 
     env:
-      Thirdparty_ACT: https://github.com/EQAditu/AdvancedCombatTracker/releases/download/3.6.0.275/ACTv3.zip
-      Thirdparty_FFXIV_ACT_Plugin: https://github.com/ravahn/FFXIV_ACT_Plugin/raw/master/Releases/FFXIV_ACT_Plugin_SDK_2.0.7.0.zip
       Solution_Name: Cafe.Matcha.sln
 
     steps:
@@ -37,22 +35,6 @@ jobs:
 
       - name: Setup MSBuild.exe
         uses: microsoft/setup-msbuild@v2
-
-      - name: Setup thirdparty dependencies
-        run: |
-          nuget restore ${{ env.Solution_Name }}
-
-          New-Item -Name "thirdparty" -ItemType "directory" -Force
-
-          Invoke-WebRequest -Uri ${{ env.Thirdparty_ACT }} -OutFile thirdparty\ACT.zip
-          Expand-Archive thirdparty\ACT.zip -DestinationPath thirdparty\ACT -Force
-
-          Invoke-WebRequest -Uri ${{ env.Thirdparty_FFXIV_ACT_Plugin }} -OutFile thirdparty\FFXIV_ACT_Plugin.zip
-          Expand-Archive thirdparty\FFXIV_ACT_Plugin.zip -DestinationPath thirdparty\FFXIV_ACT_Plugin -Force
-
-          Get-ChildItem .\thirdparty
-          Get-ChildItem .\thirdparty\ACT
-          Get-ChildItem .\thirdparty\FFXIV_ACT_Plugin
 
       - name: Build
         run: msbuild $env:Solution_Name /p:Configuration=$env:Configuration
