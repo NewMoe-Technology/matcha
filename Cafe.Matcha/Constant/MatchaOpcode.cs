@@ -37,11 +37,10 @@ namespace Cafe.Matcha.Constant
         /* Ipcs_cn.cs 7.56a (CN_2026.09.15) — direct name match
          * Client zone opcodes carry the 0x8000 direction bit (see Packet.cs).
          *
-         * TODO: not named in Ipcs_cn.cs, values are still carried over from 7.56
-         * and need manual verification:
-         *   ItemInfo              = 0x0073
-         *   InventoryTransaction  = 0x024E
-         *   ResumeEventScene32 (MiniCactpotInit) = 0x0335
+         * Manually verified (not named in Ipcs_cn.cs):
+         *   ItemInfo              = 0x0084
+         *   InventoryTransaction  = 0x023A
+         *   ResumeEventScene32 (MiniCactpotInit) = 0x024D
          */
         public static Dictionary<ushort, MatchaOpcode> Global = new Dictionary<ushort, MatchaOpcode>
         {
@@ -51,14 +50,14 @@ namespace Cafe.Matcha.Constant
             { 0x006C, MatchaOpcode.CompanyAirshipStatus },
             { 0x01EC, MatchaOpcode.CompanySubmersibleStatus },
             { 0x0333, MatchaOpcode.ContentFinderNotifyPop },
-            { 0x0335, MatchaOpcode.ResumeEventScene32 },
+            { 0x024D, MatchaOpcode.ResumeEventScene32 },
             { 0x01FD, MatchaOpcode.EventPlay },
             { 0x02E1, MatchaOpcode.EventStart },
             { 0x01F2, MatchaOpcode.Examine },
             { 0x0154, MatchaOpcode.FateInfo },
             { 0x032B, MatchaOpcode.InitZone },
-            { 0x024E, MatchaOpcode.InventoryTransaction },
-            { 0x0073, MatchaOpcode.ItemInfo },
+            { 0x023A, MatchaOpcode.InventoryTransaction },
+            { 0x0084, MatchaOpcode.ItemInfo },
             { 0x034D, MatchaOpcode.MarketBoardItemListing },
             { 0x00C0, MatchaOpcode.MarketBoardItemListingCount },
             { 0x0241, MatchaOpcode.MarketBoardItemListingHistory },
@@ -78,14 +77,14 @@ namespace Cafe.Matcha.Constant
             { 0x006C, MatchaOpcode.CompanyAirshipStatus },
             { 0x01EC, MatchaOpcode.CompanySubmersibleStatus },
             { 0x0333, MatchaOpcode.ContentFinderNotifyPop },
-            { 0x0335, MatchaOpcode.ResumeEventScene32 },
+            { 0x024D, MatchaOpcode.ResumeEventScene32 },
             { 0x01FD, MatchaOpcode.EventPlay },
             { 0x02E1, MatchaOpcode.EventStart },
             { 0x01F2, MatchaOpcode.Examine },
             { 0x0154, MatchaOpcode.FateInfo },
             { 0x032B, MatchaOpcode.InitZone },
-            { 0x024E, MatchaOpcode.InventoryTransaction },
-            { 0x0073, MatchaOpcode.ItemInfo },
+            { 0x023A, MatchaOpcode.InventoryTransaction },
+            { 0x0084, MatchaOpcode.ItemInfo },
             { 0x034D, MatchaOpcode.MarketBoardItemListing },
             { 0x00C0, MatchaOpcode.MarketBoardItemListingCount },
             { 0x0241, MatchaOpcode.MarketBoardItemListingHistory },
