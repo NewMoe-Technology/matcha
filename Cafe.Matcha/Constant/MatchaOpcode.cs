@@ -47,6 +47,10 @@ namespace Cafe.Matcha.Constant
          *   ItemInfo              0x0084 -> 0x00D1
          *   InventoryTransaction  0x023A -> 0x032D
          *   ResumeEventScene32    0x024D -> 0x01FE (MiniCactpotInit)
+         *   FishCaught            0x0110 -> 0x03CB
+         *
+         * Client zone opcodes take the 0x8000 bit (Ipcs_cn.cs raw value shown):
+         *   ClientTrigger         0x0368 -> 0x8368 (see FishingHandler.cs)
          */
         public static Dictionary<ushort, MatchaOpcode> Global = new Dictionary<ushort, MatchaOpcode>
         {
@@ -75,9 +79,9 @@ namespace Cafe.Matcha.Constant
             { 0x007C, MatchaOpcode.WorldVisitQueue },
             { 0x0324, MatchaOpcode.EventPlay4 },
             { 0x00EB, MatchaOpcode.SystemLogMessage },
-            { 0x0110, MatchaOpcode.FishCaught },
+            { 0x03CB, MatchaOpcode.FishCaught },
             { 0x02CE, MatchaOpcode.StatusEffectList },
-            { 0x0368, MatchaOpcode.ClientTrigger },
+            { 0x8368, MatchaOpcode.ClientTrigger },
         };
 
         public static Dictionary<ushort, MatchaOpcode> China = new Dictionary<ushort, MatchaOpcode>
@@ -107,9 +111,9 @@ namespace Cafe.Matcha.Constant
             { 0x007C, MatchaOpcode.WorldVisitQueue },
             { 0x0324, MatchaOpcode.EventPlay4 },
             { 0x00EB, MatchaOpcode.SystemLogMessage },
-            { 0x0110, MatchaOpcode.FishCaught },
+            { 0x03CB, MatchaOpcode.FishCaught },
             { 0x02CE, MatchaOpcode.StatusEffectList },
-            { 0x0368, MatchaOpcode.ClientTrigger },
+            { 0x8368, MatchaOpcode.ClientTrigger },
         };
     }
 }
