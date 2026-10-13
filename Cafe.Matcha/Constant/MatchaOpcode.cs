@@ -34,66 +34,67 @@ namespace Cafe.Matcha.Constant
 
     internal static class OpcodeStorage
     {
-        /* Ipcs_cn.cs 7.56a (CN_2026.09.15) — direct name match
+        /* Ipcs_cn.cs 7.57 (CN_2026.10.06) — direct name match
          * Client zone opcodes carry the 0x8000 direction bit (see Packet.cs).
          *
-         * Manually verified (not named in Ipcs_cn.cs):
-         *   ItemInfo              = 0x0084
-         *   InventoryTransaction  = 0x023A
-         *   ResumeEventScene32 (MiniCactpotInit) = 0x024D
+         * Not named in Ipcs_cn.cs — resolved via xivdev/opcodediff 7.57.diff.json
+         * (7.56a -> 7.57; mapping validated against all 20 known opcodes):
+         *   ItemInfo              0x0084 -> 0x00D1
+         *   InventoryTransaction  0x023A -> 0x032D
+         *   ResumeEventScene32    0x024D -> 0x01FE (MiniCactpotInit)
          */
         public static Dictionary<ushort, MatchaOpcode> Global = new Dictionary<ushort, MatchaOpcode>
         {
-            { 0x025F, MatchaOpcode.ActorControl },
-            { 0x0204, MatchaOpcode.ActorControlSelf },
-            { 0x031E, MatchaOpcode.CEDirector },
-            { 0x006C, MatchaOpcode.CompanyAirshipStatus },
-            { 0x01EC, MatchaOpcode.CompanySubmersibleStatus },
-            { 0x0333, MatchaOpcode.ContentFinderNotifyPop },
-            { 0x024D, MatchaOpcode.ResumeEventScene32 },
-            { 0x01FD, MatchaOpcode.EventPlay },
-            { 0x02E1, MatchaOpcode.EventStart },
-            { 0x01F2, MatchaOpcode.Examine },
-            { 0x0154, MatchaOpcode.FateInfo },
-            { 0x032B, MatchaOpcode.InitZone },
-            { 0x023A, MatchaOpcode.InventoryTransaction },
-            { 0x0084, MatchaOpcode.ItemInfo },
-            { 0x034D, MatchaOpcode.MarketBoardItemListing },
-            { 0x00C0, MatchaOpcode.MarketBoardItemListingCount },
-            { 0x0241, MatchaOpcode.MarketBoardItemListingHistory },
-            { 0x8320, MatchaOpcode.MarketBoardRequestItemListingInfo },
-            { 0x020C, MatchaOpcode.NpcSpawn },
-            { 0x0093, MatchaOpcode.PlayerSetup },
-            { 0x01C4, MatchaOpcode.PlayerSpawn },
-            { 0x038A, MatchaOpcode.SubmarineStatusList },
-            { 0x01E8, MatchaOpcode.WorldVisitQueue },
+            { 0x0198, MatchaOpcode.ActorControl },
+            { 0x01E6, MatchaOpcode.ActorControlSelf },
+            { 0x020A, MatchaOpcode.CEDirector },
+            { 0x0178, MatchaOpcode.CompanyAirshipStatus },
+            { 0x039C, MatchaOpcode.CompanySubmersibleStatus },
+            { 0x028A, MatchaOpcode.ContentFinderNotifyPop },
+            { 0x01FE, MatchaOpcode.ResumeEventScene32 },
+            { 0x0256, MatchaOpcode.EventPlay },
+            { 0x0286, MatchaOpcode.EventStart },
+            { 0x019C, MatchaOpcode.Examine },
+            { 0x0259, MatchaOpcode.FateInfo },
+            { 0x02CC, MatchaOpcode.InitZone },
+            { 0x032D, MatchaOpcode.InventoryTransaction },
+            { 0x00D1, MatchaOpcode.ItemInfo },
+            { 0x0234, MatchaOpcode.MarketBoardItemListing },
+            { 0x010D, MatchaOpcode.MarketBoardItemListingCount },
+            { 0x011E, MatchaOpcode.MarketBoardItemListingHistory },
+            { 0x8248, MatchaOpcode.MarketBoardRequestItemListingInfo },
+            { 0x0114, MatchaOpcode.NpcSpawn },
+            { 0x0302, MatchaOpcode.PlayerSetup },
+            { 0x0265, MatchaOpcode.PlayerSpawn },
+            { 0x0367, MatchaOpcode.SubmarineStatusList },
+            { 0x007C, MatchaOpcode.WorldVisitQueue },
         };
 
         public static Dictionary<ushort, MatchaOpcode> China = new Dictionary<ushort, MatchaOpcode>
         {
-            { 0x025F, MatchaOpcode.ActorControl },
-            { 0x0204, MatchaOpcode.ActorControlSelf },
-            { 0x031E, MatchaOpcode.CEDirector },
-            { 0x006C, MatchaOpcode.CompanyAirshipStatus },
-            { 0x01EC, MatchaOpcode.CompanySubmersibleStatus },
-            { 0x0333, MatchaOpcode.ContentFinderNotifyPop },
-            { 0x024D, MatchaOpcode.ResumeEventScene32 },
-            { 0x01FD, MatchaOpcode.EventPlay },
-            { 0x02E1, MatchaOpcode.EventStart },
-            { 0x01F2, MatchaOpcode.Examine },
-            { 0x0154, MatchaOpcode.FateInfo },
-            { 0x032B, MatchaOpcode.InitZone },
-            { 0x023A, MatchaOpcode.InventoryTransaction },
-            { 0x0084, MatchaOpcode.ItemInfo },
-            { 0x034D, MatchaOpcode.MarketBoardItemListing },
-            { 0x00C0, MatchaOpcode.MarketBoardItemListingCount },
-            { 0x0241, MatchaOpcode.MarketBoardItemListingHistory },
-            { 0x8320, MatchaOpcode.MarketBoardRequestItemListingInfo },
-            { 0x020C, MatchaOpcode.NpcSpawn },
-            { 0x0093, MatchaOpcode.PlayerSetup },
-            { 0x01C4, MatchaOpcode.PlayerSpawn },
-            { 0x038A, MatchaOpcode.SubmarineStatusList },
-            { 0x01E8, MatchaOpcode.WorldVisitQueue },
+            { 0x0198, MatchaOpcode.ActorControl },
+            { 0x01E6, MatchaOpcode.ActorControlSelf },
+            { 0x020A, MatchaOpcode.CEDirector },
+            { 0x0178, MatchaOpcode.CompanyAirshipStatus },
+            { 0x039C, MatchaOpcode.CompanySubmersibleStatus },
+            { 0x028A, MatchaOpcode.ContentFinderNotifyPop },
+            { 0x01FE, MatchaOpcode.ResumeEventScene32 },
+            { 0x0256, MatchaOpcode.EventPlay },
+            { 0x0286, MatchaOpcode.EventStart },
+            { 0x019C, MatchaOpcode.Examine },
+            { 0x0259, MatchaOpcode.FateInfo },
+            { 0x02CC, MatchaOpcode.InitZone },
+            { 0x032D, MatchaOpcode.InventoryTransaction },
+            { 0x00D1, MatchaOpcode.ItemInfo },
+            { 0x0234, MatchaOpcode.MarketBoardItemListing },
+            { 0x010D, MatchaOpcode.MarketBoardItemListingCount },
+            { 0x011E, MatchaOpcode.MarketBoardItemListingHistory },
+            { 0x8248, MatchaOpcode.MarketBoardRequestItemListingInfo },
+            { 0x0114, MatchaOpcode.NpcSpawn },
+            { 0x0302, MatchaOpcode.PlayerSetup },
+            { 0x0265, MatchaOpcode.PlayerSpawn },
+            { 0x0367, MatchaOpcode.SubmarineStatusList },
+            { 0x007C, MatchaOpcode.WorldVisitQueue },
         };
     }
 }
