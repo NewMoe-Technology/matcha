@@ -30,6 +30,11 @@ namespace Cafe.Matcha.Constant
         PlayerSpawn,
         SubmarineStatusList,
         WorldVisitQueue,
+        EventPlay4,
+        SystemLogMessage,
+        FishCaught,
+        StatusEffectList,
+        ClientTrigger,
     }
 
     internal static class OpcodeStorage
@@ -68,6 +73,11 @@ namespace Cafe.Matcha.Constant
             { 0x0265, MatchaOpcode.PlayerSpawn },
             { 0x0367, MatchaOpcode.SubmarineStatusList },
             { 0x007C, MatchaOpcode.WorldVisitQueue },
+            { 0x0324, MatchaOpcode.EventPlay4 },
+            { 0x00EB, MatchaOpcode.SystemLogMessage },
+            { 0x0110, MatchaOpcode.FishCaught },
+            { 0x02CE, MatchaOpcode.StatusEffectList },
+            { 0x0368, MatchaOpcode.ClientTrigger },
         };
 
         public static Dictionary<ushort, MatchaOpcode> China = new Dictionary<ushort, MatchaOpcode>
@@ -95,6 +105,11 @@ namespace Cafe.Matcha.Constant
             { 0x0265, MatchaOpcode.PlayerSpawn },
             { 0x0367, MatchaOpcode.SubmarineStatusList },
             { 0x007C, MatchaOpcode.WorldVisitQueue },
+            { 0x0324, MatchaOpcode.EventPlay4 },
+            { 0x00EB, MatchaOpcode.SystemLogMessage },
+            { 0x0110, MatchaOpcode.FishCaught },
+            { 0x02CE, MatchaOpcode.StatusEffectList },
+            { 0x0368, MatchaOpcode.ClientTrigger },
         };
     }
 }
